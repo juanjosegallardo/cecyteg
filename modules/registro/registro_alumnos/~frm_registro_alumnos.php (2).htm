@@ -1,0 +1,1145 @@
+﻿<form id="frm_registro_alumnos" name="frm_registro_alumnos">
+<br />
+<font size='1'><table class='xdebug-error xe-warning' dir='ltr' border='1' cellspacing='0' cellpadding='1'>
+<tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> Warning: date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line <i>7</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0105</td><td bgcolor='#eeeeec' align='right'>143584</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>0</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.0422</td><td bgcolor='#eeeeec' align='right'>147296</td><td bgcolor='#eeeeec'><a href='http://www.php.net/function.date' target='_new'>date</a>
+(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>7</td></tr>
+</table></font>
+2015-02-09<input type="hidden" id="_accion" name="_accion" value="guardar_registro" />
+<input type="hidden" id="hdn_grupo_alumnos" name="hdn_grupo_alumnos" value="1704" />
+    <table class="ui-widget ui-widget-content ui-corner-all ventana" >
+        <colgroup>
+            <col width="10%" />
+            <col width="90%" /> 
+        </colgroup>
+        <tr>    
+            <td class="ui-widget-header ui-corner-all encabezado" colspan="2">
+               Registro Alumnos
+            </td>    
+        </tr>        
+       	<tr>           
+            <td>
+               Aula 
+            </td>
+            <td>            
+                <select id="cmb_aula" hijo="cmb_clase"  asincrono="true" name="cmb_grupo" campo="tbl_aula_id_aula" obligatorio="true" mensaje="Favor de especificar una aula valida" class="combo_server" ruta="../registro_alumnos/prp_registro_alumnos.php" iniciado="false"></select>               
+            </td>               
+        </tr>
+
+       	<tr>           
+            <td>
+               Clase 
+            </td>
+            <td>            
+                <select id="cmb_clase" asincrono="true"  name="cmb_clase" campo="tbl_clase_id_clase" obligatorio="true" mensaje="Favor de especificar una clase valida" class="combo_server" ruta="../registro_alumnos/prp_registro_alumnos.php" iniciado="false"></select>               
+            </td>               
+        </tr>
+      	<tr>           
+            <td>
+               Alumno 
+            </td>
+            <td>            
+                <input type="text" id="txt_numero_control_alumnos" name="txt_numero_control_alumnos"  /> 
+            </td>               
+        </tr>
+
+    </table>
+</form>
+<div id="mensaje_registro_alumnos" align="center"></div>
+<br />
+<br />
+
+<form method="post" name="frm_reporte_inasistencias" id="frm_reporte_inasistencias" action="../registro_alumnos/pdf_registro_inasistencias.php" target="_blank" >
+<table class="ui-widget ui-widget-content ui-corner-all ventana" >
+	<colgroup>
+	    <col width="50%" />
+	    <col width="50%" /> 
+	</colgroup>
+        <tr>    
+            <td class="ui-widget-header ui-corner-all encabezado" colspan="2">
+               Reporte de Inasistencias
+            </td>    
+        </tr>        
+        
+	<tr>
+		<td>
+			Fecha:
+		</td>
+		<td>
+ 			<input id="txt_reporte_inasistencia_fecha" name="txt_reporte_inasistencia_fecha" type="text" class="fecha" obligatorio="true" value="<br />
+<font size='1'><table class='xdebug-error xe-warning' dir='ltr' border='1' cellspacing='0' cellpadding='1'>
+<tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> Warning: date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line <i>69</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0105</td><td bgcolor='#eeeeec' align='right'>143584</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>0</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.0647</td><td bgcolor='#eeeeec' align='right'>147432</td><td bgcolor='#eeeeec'><a href='http://www.php.net/function.date' target='_new'>date</a>
+(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>69</td></tr>
+</table></font>
+2015-02-09"/>
+		</td>
+	</tr>
+<tr>
+        
+        <td>Hora Entrada</td>
+            
+        	<td>            
+                <select id="txt_reporte_inasistencia_hora_entrada" name="txt_reporte_inasistencia_hora_entrada"  obligatorio="true">
+			
+			<br />
+<font size='1'><table class='xdebug-error xe-warning' dir='ltr' border='1' cellspacing='0' cellpadding='1'>
+<tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> Warning: date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line <i>84</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0105</td><td bgcolor='#eeeeec' align='right'>143584</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>0</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.0660</td><td bgcolor='#eeeeec' align='right'>147656</td><td bgcolor='#eeeeec'><a href='http://www.php.net/function.date' target='_new'>date</a>
+(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_aluPHP Warning:  date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line 7
+PHP Stack trace:
+PHP   1. {main}() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:0
+PHP   2. date() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:7
+PHP Warning:  date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line 69
+PHP Stack trace:
+PHP   1. {main}() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:0
+PHP   2. date() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:69
+PHP Warning:  date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line 84
+PHP Stack trace:
+PHP   1. {main}() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:0
+PHP   2. date() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:84
+PHP Warning:  strtotime(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line 84
+PHP Stack trace:
+PHP   1. {main}() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:0
+PHP   2. strtotime() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:84
+PHP Warning:  strtotime(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line 84
+PHP Stack trace:
+PHP   1. {main}() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:0
+PHP   2. strtotime() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:84
+PHP Warning:  strtotime(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line 84
+PHP Stack trace:
+PHP   1. {main}() C:\wmnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>84</td></tr>
+</table></font>
+<br />
+<font size='1'><table class='xdebug-error xe-warning' dir='ltr' border='1' cellspacing='0' cellpadding='1'>
+<tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> Warning: strtotime(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line <i>84</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0105</td><td bgcolor='#eeeeec' align='right'>143584</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>0</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.0675</td><td bgcolor='#eeeeec' align='right'>147664</td><td bgcolor='#eeeeec'><a href='http://www.php.net/function.strtotime' target='_new'>strtotime</a>
+(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>84</td></tr>
+</table></font>
+<br />
+<font size='1'><table class='xdebug-error xe-warning' dir='ltr' border='1' cellspacing='0' cellpadding='1'>
+<tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> Warning: strtotime(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line <i>84</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0105</td><td bgcolor='#eeeeec' align='right'>143584</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>0</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.1109</td><td bgcolor='#eeeeec' align='right'>147688</td><td bgcolor='#eeeeec'><a href='http://www.php.net/function.strtotime' target='_new'>strtotime</a>
+(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>84</td></tr>
+</table></font>
+<br />
+<font size='1'><table class='xdebug-error xe-warning' dir='ltr' border='1' cellspacing='0' cellpadding='1'>
+<tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> Warning: strtotime(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line <i>84</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0105</td><td bgcolor='#eeeeec' align='right'>143584</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>0</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.1126</td><td bgcolor='#eeeeec' align='right'>147656</td><td bgcolor='#eeeeec'><a href='http://www.php.net/function.strtotime' target='_new'>strtotime</a>
+(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>84</td></tr>
+</table></font>
+<br />
+<font size='1'><table class='xdebug-error xe-warning' dir='ltr' border='1' cellspacing='0' cellpadding='1'>
+<tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> Warning: date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line <i>84</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0105</td><td bgcolor='#eeeeec' align='right'>143584</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>0</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.1148</td><td bgcolor='#eeeeec' align='right'>147688</td><td bgcolor='#eeeeec'><a href='http://www.php.net/function.date' target='_new'>date</a>
+(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>84</td></tr>
+</table></font>
+<br />
+<font size='1'><table class='xdebug-error xe-warning' dir='ltr' border='1' cellspacing='0' cellpadding='1'>
+<tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> Warning: strtotime(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line <i>84</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0105</td><td bgcolor='#eeeeec' align='right'>143584</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>0</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.1207</td><td bgcolor='#eeeeec' align='right'>147696</td><td bgcolor='#eeeeec'><a href='http://www.php.net/function.strtotime' target='_new'>strtotime</a>
+(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>84</td></tr>
+</table></font>
+					<option value="7:00"  >
+						 7:00 
+
+
+
+					</option>				
+				<br />
+<font size='1'><table class='xdebug-error xe-warning' dir='ltr' border='1' cellspacing='0' cellpadding='1'>
+<tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> Warning: date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line <i>84</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0105</td><td bgcolor='#eeeeec' align='right'>143584</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>0</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.1219</td><td bgcolor='#eeeeec' align='right'>147656</td><td bgcolor='#eeeeec'><a href='http://www.php.net/function.date' target='_new'>date</a>
+(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>84</td></tr>
+</table></font>
+<br />
+<font size='1'><table class='xdebug-error xe-warning' dir='ltr' border='1' cellspacing='0' cellpadding='1'>
+<tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> Warning: strtotime(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line <i>84</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:0
+PHP   2. strtotime() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:84
+PHP Warning:  date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line 84
+PHP Stack trace:
+PHP   1. {main}() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:0
+PHP   2. date() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:84
+PHP Warning:  strtotime(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line 84
+PHP Stack trace:
+PHP   1. {main}() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:0
+PHP   2. strtotime() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:84
+PHP Warning:  date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line 84
+PHP Stack trace:
+PHP   1. {main}() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:0
+PHP   2. date() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:84
+PHP Warning:  strtotime(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line 84
+PHP Stack trace:
+PHP   1. {main}() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:0
+PHP   2. strtotime() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:84
+PHP Warning:  strtotime(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line 84
+PHP Stack trace:
+PHP   1. {main}() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:0
+PHP   2. strtotime() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:84
+PHP Warning:  strtotime(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' foreec' align='center'>0.0105</td><td bgcolor='#eeeeec' align='right'>143584</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>0</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.1229</td><td bgcolor='#eeeeec' align='right'>147664</td><td bgcolor='#eeeeec'><a href='http://www.php.net/function.strtotime' target='_new'>strtotime</a>
+(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>84</td></tr>
+</table></font>
+<br />
+<font size='1'><table class='xdebug-error xe-warning' dir='ltr' border='1' cellspacing='0' cellpadding='1'>
+<tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> Warning: strtotime(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line <i>84</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0105</td><td bgcolor='#eeeeec' align='right'>143584</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>0</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.1265</td><td bgcolor='#eeeeec' align='right'>147688</td><td bgcolor='#eeeeec'><a href='http://www.php.net/function.strtotime' target='_new'>strtotime</a>
+(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>84</td></tr>
+</table></font>
+<br />
+<font size='1'><table class='xdebug-error xe-warning' dir='ltr' border='1' cellspacing='0' cellpadding='1'>
+<tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> Warning: strtotime(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line <i>84</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0105</td><td bgcolor='#eeeeec' align='right'>143584</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>0</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.1275</td><td bgcolor='#eeeeec' align='right'>147656</td><td bgcolor='#eeeeec'><a href='http://www.php.net/function.strtotime' target='_new'>strtotime</a>
+(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>84</td></tr>
+</table></font>
+<br />
+<font size='1'><table class='xdebug-error xe-warning' dir='ltr' border='1' cellspacing='0' cellpadding='1'>
+<tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> Warning: date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line <i>84</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0105</td><td bgcolor='#eeeeec' align='right'>143584</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>0</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.1294</td><td bgcolor='#eeeeec' align='right'>147688</td><td bgcolor='#eeeeec'><a href='http://www.php.net/function.date' target='_new'>date</a>
+(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>84</td></tr>
+</table></font>
+<br />
+<font size='1'><table class='xdebug-error xe-warning' dir='ltr' border='1' cellspacing='0' cellpadding='1'>
+<tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> Warning: strtotime(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line <i>84</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0105</td><td bgcolor='#eeeeec' align='right'>143584</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>0</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.1313</td><td bgcolor='#eeeeec' align='right'>147696</td><td bgcolor='#eeeeec'><a href='http://www.php.net/function.strtotime' target='_new'>strtotime</a>
+(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>84</td></tr>
+</table></font>
+					<option value="7:50"  >
+						 7:50 
+
+
+
+					</option>				
+				<br />
+<font size='1'><table class='xdebug-error xe-warning' dir='ltr' border='1' cellspacing='0' ce now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line 84
+PHP Stack trace:
+PHP   1. {main}() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:0
+PHP   2. strtotime() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:84
+PHP Warning:  date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line 84
+PHP Stack trace:
+PHP   1. {main}() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:0
+PHP   2. date() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:84
+PHP Warning:  strtotime(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line 84
+PHP Stack trace:
+PHP   1. {main}() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:0
+PHP   2. strtotime() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:84
+PHP Warning:  date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line 84
+PHP Stack trace:
+PHP   1. {main}() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:0
+PHP   2. date() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:84
+PHP Warning:  strtotime(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line 84
+PHP Stack trace:
+PHP   1. {main}() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:0
+PHP   2. strtotime() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:84
+PHP Warning:  strtotime(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line 84
+PHP Stack trace:
+PHP   1. {main}() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:0
+PHP   2. strtotime() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:84
+PHP Warning:  strtotime(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_defaullpadding='1'>
+<tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> Warning: date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line <i>84</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0105</td><td bgcolor='#eeeeec' align='right'>143584</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>0</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.1324</td><td bgcolor='#eeeeec' align='right'>147656</td><td bgcolor='#eeeeec'><a href='http://www.php.net/function.date' target='_new'>date</a>
+(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>84</td></tr>
+</table></font>
+<br />
+<font size='1'><table class='xdebug-error xe-warning' dir='ltr' border='1' cellspacing='0' cellpadding='1'>
+<tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> Warning: strtotime(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line <i>84</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0105</td><td bgcolor='#eeeeec' align='right'>143584</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>0</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.1333</td><td bgcolor='#eeeeec' align='right'>147664</td><td bgcolor='#eeeeec'><a href='http://www.php.net/function.strtotime' target='_new'>strtotime</a>
+(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>84</td></tr>
+</table></font>
+<br />
+<font size='1'><table class='xdebug-error xe-warning' dir='ltr' border='1' cellspacing='0' cellpadding='1'>
+<tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> Warning: strtotime(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line <i>84</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0105</td><td bgcolor='#eeeeec' align='right'>143584</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>0</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.1356</td><td bgcolor='#eeeeec' align='right'>147688</td><td bgcolor='#eeeeec'><a href='http://www.php.net/function.strtotime' target='_new'>strtotime</a>
+(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>84</td></tr>
+</table></font>
+<br />
+<font size='1'><table class='xdebug-error xe-warning' dir='ltr' border='1' cellspacing='0' cellpadding='1'>
+<tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> Warning: strtotime(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line <i>84</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0105</td><td bgcolor='#eeeeec' align='right'>143584</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>0</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.1366</td><td bgcolor='#eeeeec' align='right'>147656</td><td bgcolor='#eeeeec'><a href='http://www.php.net/function.strtotime' target='_new'>strtotime</a>
+(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>84</td></tr>
+</table></font>
+<br />
+<font size='1'><table class='xdebug-error xe-warning' dir='ltr' border='1' cellspacing='0' cellpadding='1'>
+<tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> Warning: date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line <i>84</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0105</td><td bgcolor='#eeeeec' align='right'>143584</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>0</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.1385</td><td bgcolor='#eeeeec' align='right'>147688</td><td bgcolor='#eeeeec'><a href='http://www.php.net/function.date' target='_new'>date</a>
+(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>84</td></tr>
+</table></font>
+<br />
+<font size='1'><table class='xdebug-error xe-warning' dir='ltr' border='1' cellspacing='0' cellpadding='1'>
+<tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> Warning: strtotime(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line <i>84</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0105</td><td bgcolor='#eeeeec' align='right'>143584</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>0</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.1418</td><td bgcolor='#eeeeec' align='right'>147696</td><td bgcolor='#eeeeec'><a href='http://www.php.net/function.strtotime' target='_new'>strtotime</a>
+(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>84</td></tr>
+</table></font>
+					<option value="8:40"  >
+						 8:40 
+
+
+
+					</option>				
+				<br />
+<font size='1'><table class='xdebug-error xe-warning' dir='ltr' border='1' cellspacing='0' cellpadding='1'>
+<tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> Warning: date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line <i>84</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0105</td><td bgcolor='#eeeeec' align='right'>143584</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumlt_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line 84
+PHP Stack trace:
+PHP   1. {main}() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:0
+PHP   2. strtotime() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:84
+PHP Warning:  date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line 84
+PHP Stack trace:
+PHP   1. {main}() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:0
+PHP   2. date() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:84
+PHP Warning:  strtotime(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line 84
+PHP Stack trace:
+PHP   1. {main}() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:0
+PHP   2. strtotime() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:84
+PHP Warning:  date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line 84
+PHP Stack trace:
+PHP   1. {main}() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:0
+PHP   2. date() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:84
+PHP Warning:  strtotime(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line 84
+PHP Stack trace:
+PHP   1. {main}() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:0
+PHP   2. strtotime() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:84
+PHP Warning:  strtotime(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line 84
+PHP Stack trace:
+PHP   1. {main}() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:0
+PHP   2. strtotime() C:\wamp\www\cecyteg\modules\registro\registrnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>0</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.1429</td><td bgcolor='#eeeeec' align='right'>147656</td><td bgcolor='#eeeeec'><a href='http://www.php.net/function.date' target='_new'>date</a>
+(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>84</td></tr>
+</table></font>
+<br />
+<font size='1'><table class='xdebug-error xe-warning' dir='ltr' border='1' cellspacing='0' cellpadding='1'>
+<tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> Warning: strtotime(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line <i>84</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0105</td><td bgcolor='#eeeeec' align='right'>143584</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>0</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.1438</td><td bgcolor='#eeeeec' align='right'>147664</td><td bgcolor='#eeeeec'><a href='http://www.php.net/function.strtotime' target='_new'>strtotime</a>
+(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>84</td></tr>
+</table></font>
+<br />
+<font size='1'><table class='xdebug-error xe-warning' dir='ltr' border='1' cellspacing='0' cellpadding='1'>
+<tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> Warning: strtotime(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line <i>84</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0105</td><td bgcolor='#eeeeec' align='right'>143584</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>0</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.1455</td><td bgcolor='#eeeeec' align='right'>147688</td><td bgcolor='#eeeeec'><a href='http://www.php.net/function.strtotime' target='_new'>strtotime</a>
+(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>84</td></tr>
+</table></font>
+<br />
+<font size='1'><table class='xdebug-error xe-warning' dir='ltr' border='1' cellspacing='0' cellpadding='1'>
+<tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> Warning: strtotime(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line <i>84</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0105</td><td bgcolor='#eeeeec' align='right'>143584</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>0</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.1474</td><td bgcolor='#eeeeec' align='right'>147656</td><td bgcolor='#eeeeec'><a href='http://www.php.net/function.strtotime' target='_new'>strtotime</a>
+(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>84</td></tr>
+</table></font>
+<br />
+<font size='1'><table class='xdebug-error xe-warning' dir='ltr' border='1' cellspacing='0' cellpadding='1'>
+<tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> Warning: date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line <i>84</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0105</td><td bgcolor='#eeeeec' align='right'>143584</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>0</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.1483</td><td bgcolor='#eeeeec' align='right'>147688</td><td bgcolor='#eeeeec'><a href='http://www.php.net/function.date' target='_new'>date</a>
+(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>84</td></tr>
+</table></font>
+<br />
+<font size='1'><table class='xdebug-error xe-warning' dir='ltr' border='1' cellspacing='0' cellpadding='1'>
+<tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> Warning: strtotime(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line <i>84</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0105</td><td bgcolor='#eeeeec' align='right'>143584</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>0</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.1636</td><td bgcolor='#eeeeec' align='right'>147704</td><td bgcolor='#eeeeec'><a href='http://www.php.net/function.strtotime' target='_new'>strtotime</a>
+(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>84</td></tr>
+</table></font>
+					<option value="9:30"  >
+						 9:30 
+
+
+
+					</option>				
+				<br />
+<font size='1'><table class='xdebug-error xe-warning' dir='ltr' border='1' cellspacing='0' cellpadding='1'>
+<tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> Warning: date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line <i>84</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0105</td><td bgcolor='#eeeeec' align='right'>143584</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>0</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.1652</td><td bgcolor='#eeeeec' align='right'>147656</td><td bgcolor='#eeeeec'><a href='http://www.php.net/function.date' target='_new'>date</a>
+(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>84</td></tr>
+</table></font>
+<br />
+<font size='1'><table class='xdebug-error xe-warning' dir='ltr' border='1' cellspacing='0' cellpadding='1'>
+<tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> Warning: strtotime(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line <o_alumnos\frm_registro_alumnos.php:84
+PHP Warning:  strtotime(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line 84
+PHP Stack trace:
+PHP   1. {main}() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:0
+PHP   2. strtotime() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:84
+PHP Warning:  date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line 84
+PHP Stack trace:
+PHP   1. {main}() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:0
+PHP   2. date() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:84
+PHP Warning:  strtotime(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line 84
+PHP Stack trace:
+PHP   1. {main}() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:0
+PHP   2. strtotime() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:84
+PHP Warning:  date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line 84
+PHP Stack trace:
+PHP   1. {main}() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:0
+PHP   2. date() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:84
+PHP Warning:  strtotime(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line 84
+PHP Stack trace:
+PHP   1. {main}() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:0
+PHP   2. strtotime() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:84
+PHP Warning:  strtotime(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php i>84</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0105</td><td bgcolor='#eeeeec' align='right'>143584</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>0</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.1662</td><td bgcolor='#eeeeec' align='right'>147672</td><td bgcolor='#eeeeec'><a href='http://www.php.net/function.strtotime' target='_new'>strtotime</a>
+(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>84</td></tr>
+</table></font>
+<br />
+<font size='1'><table class='xdebug-error xe-warning' dir='ltr' border='1' cellspacing='0' cellpadding='1'>
+<tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> Warning: strtotime(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line <i>84</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0105</td><td bgcolor='#eeeeec' align='right'>143584</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>0</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.1764</td><td bgcolor='#eeeeec' align='right'>147688</td><td bgcolor='#eeeeec'><a href='http://www.php.net/function.strtotime' target='_new'>strtotime</a>
+(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>84</td></tr>
+</table></font>
+<br />
+<font size='1'><table class='xdebug-error xe-warning' dir='ltr' border='1' cellspacing='0' cellpadding='1'>
+<tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> Warning: strtotime(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line <i>84</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0105</td><td bgcolor='#eeeeec' align='right'>143584</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>0</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.1783</td><td bgcolor='#eeeeec' align='right'>147656</td><td bgcolor='#eeeeec'><a href='http://www.php.net/function.strtotime' target='_new'>strtotime</a>
+(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>84</td></tr>
+</table></font>
+<br />
+<font size='1'><table class='xdebug-error xe-warning' dir='ltr' border='1' cellspacing='0' cellpadding='1'>
+<tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> Warning: date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line <i>84</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0105</td><td bgcolor='#eeeeec' align='right'>143584</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>0</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.1792</td><td bgcolor='#eeeeec' align='right'>147688</td><td bgcolor='#eeeeec'><a href='http://www.php.net/function.date' target='_new'>date</a>
+(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>84</td></tr>
+</table></font>
+<br />
+<font size='1'><table class='xdebug-error xe-warning' dir='ltr' border='1' cellspacing='0' cellpadding='1'>
+<tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> Warning: strtotime(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line <i>84</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0105</td><td bgcolor='#eeeeec' align='right'>143584</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>0</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.1817</td><td bgcolor='#eeeeec' align='right'>147704</td><td bgcolor='#eeeeec'><a href='http://www.php.net/function.son line 84
+PHP Stack trace:
+PHP   1. {main}() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:0
+PHP   2. strtotime() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:84
+PHP Warning:  strtotime(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line 84
+PHP Stack trace:
+PHP   1. {main}() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:0
+PHP   2. strtotime() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:84
+PHP Warning:  date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line 84
+PHP Stack trace:
+PHP   1. {main}() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:0
+PHP   2. date() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:84
+PHP Warning:  strtotime(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line 84
+PHP Stack trace:
+PHP   1. {main}() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:0
+PHP   2. strtotime() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:84
+PHP Warning:  date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line 84
+PHP Stack trace:
+PHP   1. {main}() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:0
+PHP   2. date() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:84
+PHP Warning:  strtotime(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line 84
+PHP Stack trace:
+PHP   1. {main}() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:0
+PHP   2. strtotime() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:84
+PHP Warning:  strtotime(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timeztrtotime' target='_new'>strtotime</a>
+(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>84</td></tr>
+</table></font>
+					<option value="10:00"  >
+						 10:00 
+
+
+
+					</option>				
+				<br />
+<font size='1'><table class='xdebug-error xe-warning' dir='ltr' border='1' cellspacing='0' cellpadding='1'>
+<tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> Warning: date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line <i>84</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0105</td><td bgcolor='#eeeeec' align='right'>143584</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>0</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.1828</td><td bgcolor='#eeeeec' align='right'>147656</td><td bgcolor='#eeeeec'><a href='http://www.php.net/function.date' target='_new'>date</a>
+(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>84</td></tr>
+</table></font>
+<br />
+<font size='1'><table class='xdebug-error xe-warning' dir='ltr' border='1' cellspacing='0' cellpadding='1'>
+<tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> Warning: strtotime(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line <i>84</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0105</td><td bgcolor='#eeeeec' align='right'>143584</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>0</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.1837</td><td bgcolor='#eeeeec' align='right'>147672</td><td bgcolor='#eeeeec'><a href='http://www.php.net/function.strtotime' target='_new'>strtotime</a>
+(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>84</td></tr>
+</table></font>
+<br />
+<font size='1'><table class='xdebug-error xe-warning' dir='ltr' border='1' cellspacing='0' cellpadding='1'>
+<tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> Warning: strtotime(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line <i>84</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0105</td><td bgcolor='#eeeeec' align='right'>143584</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>0</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.1856</td><td bgcolor='#eeeeec' align='right'>147688</td><td bgcolor='#eeeeec'><a href='http://www.php.net/function.strtotime' target='_new'>strtotime</a>
+(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>84</td></tr>
+</table></font>
+<br />
+<font size='1'><table class='xdebug-error xe-warning' dir='ltr' border='1' cellspacing='0' cellpadding='1'>
+<tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> Warning: strtotime(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line <i>84</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0105</td><td bgcolor='#eeeeec' align='right'>143584</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>0</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.1875</td><td bgcolor='#eeeeec' align='right'>147656</td><td bgcolor='#eeeeec'><a href='http://www.php.net/function.strtotime' target='_new'>strtotime</a>
+(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>84</td></tr>
+</table></font>
+<br />
+<font size='1'><table class='xdebug-error xe-warning' dir='ltr' border='1' cellspacing='0' cellpadding='1'>
+<tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> Warning: date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line <i>84</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0105</td><td bgcolor='#eeeeec' align='right'>143584</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>0</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.1884</td><td bgcolor='#eeeeec' align='right'>147688</td><td bgcolor='#eeeeec'><a href='http://www.php.net/function.date' target='_new'>date</a>
+(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>84</td></tr>
+</table></font>
+<br />
+<font size='1'><table class='xdebug-error xe-warning' dir='ltr' border='1' cellspacing='0' cellpadding='1'>
+<tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> Warning: strtotime(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line <i>84</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0105</td><td bgcolor='#eeeeec' align='right'>143584</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>0</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.1974</td><td bgcolor='#eeeeec' align='right'>147704</td><td bgcolor='#eeeeec'><a href='http://www.php.net/function.strtotime' target='_new'>strtotime</a>
+(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>84</td></tr>
+</table></font>
+					<option value="10:50"  >
+						 10:50 
+
+
+
+					</option>				
+				<br />
+<font size='1'><table class='xdebug-error xe-warning' dir='ltr' border='1' cellspacing='0' cellpadding='1'>
+<tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> Warning: date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line <i>84</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='one identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line 84
+PHP Stack trace:
+PHP   1. {main}() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:0
+PHP   2. strtotime() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:84
+PHP Warning:  strtotime(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line 84
+PHP Stack trace:
+PHP   1. {main}() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:0
+PHP   2. strtotime() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:84
+PHP Warning:  date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line 84
+PHP Stack trace:
+PHP   1. {main}() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:0
+PHP   2. date() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:84
+PHP Warning:  strtotime(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line 84
+PHP Stack trace:
+PHP   1. {main}() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:0
+PHP   2. strtotime() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:84
+PHP Warning:  date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line 84
+PHP Stack trace:
+PHP   1. {main}() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:0
+PHP   2. date() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:84
+PHP Warning:  strtotime(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line 84
+PHP Stack trace:
+PHP   1. {main}() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:0
+PHP   2. strtotime() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:84
+PHP Warning:  strtotime(): It is not safe to rely on the system's timezone settings. You are *required* left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0105</td><td bgcolor='#eeeeec' align='right'>143584</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>0</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.1985</td><td bgcolor='#eeeeec' align='right'>147656</td><td bgcolor='#eeeeec'><a href='http://www.php.net/function.date' target='_new'>date</a>
+(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>84</td></tr>
+</table></font>
+<br />
+<font size='1'><table class='xdebug-error xe-warning' dir='ltr' border='1' cellspacing='0' cellpadding='1'>
+<tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> Warning: strtotime(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line <i>84</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0105</td><td bgcolor='#eeeeec' align='right'>143584</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>0</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.1994</td><td bgcolor='#eeeeec' align='right'>147672</td><td bgcolor='#eeeeec'><a href='http://www.php.net/function.strtotime' target='_new'>strtotime</a>
+(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>84</td></tr>
+</table></font>
+<br />
+<font size='1'><table class='xdebug-error xe-warning' dir='ltr' border='1' cellspacing='0' cellpadding='1'>
+<tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> Warning: strtotime(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line <i>84</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0105</td><td bgcolor='#eeeeec' align='right'>143584</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>0</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.2013</td><td bgcolor='#eeeeec' align='right'>147688</td><td bgcolor='#eeeeec'><a href='http://www.php.net/function.strtotime' target='_new'>strtotime</a>
+(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>84</td></tr>
+</table></font>
+<br />
+<font size='1'><table class='xdebug-error xe-warning' dir='ltr' border='1' cellspacing='0' cellpadding='1'>
+<tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> Warning: strtotime(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line <i>84</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0105</td><td bgcolor='#eeeeec' align='right'>143584</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>0</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.2092</td><td bgcolor='#eeeeec' align='right'>147656</td><td bgcolor='#eeeeec'><a href='http://www.php.net/function.strtotime' target='_new'>strtotime</a>
+(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>84</td></tr>
+</table></font>
+<br />
+<font size='1'><table class='xdebug-error xe-warning' dir='ltr' border='1' cellspacing='0' cellpadding='1'>
+<tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> Warning: date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line <i>84</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0105</td><td bgcolor='#eeeeec' align='right'>143584</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>0</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.2101</td><td bgcolor='#eeeeec' align='right'>147688</td><td bgcolor='#eeeeec'><a href='http://www.php.net/function.date' target='_new'>date</a>
+(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>84</td></tr>to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line 84
+PHP Stack trace:
+PHP   1. {main}() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:0
+PHP   2. strtotime() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:84
+PHP Warning:  strtotime(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line 84
+PHP Stack trace:
+PHP   1. {main}() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:0
+PHP   2. strtotime() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:84
+PHP Warning:  date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line 84
+PHP Stack trace:
+PHP   1. {main}() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:0
+PHP   2. date() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:84
+PHP Warning:  strtotime(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line 84
+PHP Stack trace:
+PHP   1. {main}() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:0
+PHP   2. strtotime() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:84
+PHP Warning:  date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line 84
+PHP Stack trace:
+PHP   1. {main}() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:0
+PHP   2. date() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:84
+PHP Warning:  strtotime(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line 84
+PHP Stack trace:
+PHP   1. {main}() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:0
+PHP   2. strtot
+</table></font>
+<br />
+<font size='1'><table class='xdebug-error xe-warning' dir='ltr' border='1' cellspacing='0' cellpadding='1'>
+<tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> Warning: strtotime(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line <i>84</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0105</td><td bgcolor='#eeeeec' align='right'>143584</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>0</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.2129</td><td bgcolor='#eeeeec' align='right'>147704</td><td bgcolor='#eeeeec'><a href='http://www.php.net/function.strtotime' target='_new'>strtotime</a>
+(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>84</td></tr>
+</table></font>
+					<option value="11:40"  >
+						 11:40 
+
+
+
+					</option>				
+				<br />
+<font size='1'><table class='xdebug-error xe-warning' dir='ltr' border='1' cellspacing='0' cellpadding='1'>
+<tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> Warning: date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line <i>84</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0105</td><td bgcolor='#eeeeec' align='right'>143584</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>0</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.2140</td><td bgcolor='#eeeeec' align='right'>147656</td><td bgcolor='#eeeeec'><a href='http://www.php.net/function.date' target='_new'>date</a>
+(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>84</td></tr>
+</table></font>
+<br />
+<font size='1'><table class='xdebug-error xe-warning' dir='ltr' border='1' cellspacing='0' cellpadding='1'>
+<tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> Warning: strtotime(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line <i>84</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0105</td><td bgcolor='#eeeeec' align='right'>143584</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>0</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.2149</td><td bgcolor='#eeeeec' align='right'>147672</td><td bgcolor='#eeeeec'><a href='http://www.php.net/function.strtotime' target='_new'>strtotime</a>
+(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>84</td></tr>
+</table></font>
+<br />
+<font size='1'><table class='xdebug-error xe-warning' dir='ltr' border='1' cellspacing='0' cellpadding='1'>
+<tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> Warning: strtotime(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line <i>84</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0105</td><td bgcolor='#eeeeec' align='right'>143584</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>0</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.2177</td><td bgcolor='#eeeeec' align='right'>147688</td><td bgcolor='#eeeeec'><a href='http://www.php.net/function.strtotime' target='_new'>strtotime</a>
+(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>84</td></tr>
+</table></font>
+<br />
+<font size='1'><table class='xdebug-error xe-warning' dir='ltr' border='1' cellspacing='0' cellpadding='1'>
+<tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> Warning: strtotime(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line <i>84</i></th></tr>
+<tr><thime() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:84
+PHP Warning:  strtotime(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line 84
+PHP Stack trace:
+PHP   1. {main}() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:0
+PHP   2. strtotime() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:84
+PHP Warning:  strtotime(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line 84
+PHP Stack trace:
+PHP   1. {main}() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:0
+PHP   2. strtotime() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:84
+PHP Warning:  date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line 84
+PHP Stack trace:
+PHP   1. {main}() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:0
+PHP   2. date() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:84
+PHP Warning:  strtotime(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line 84
+PHP Stack trace:
+PHP   1. {main}() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:0
+PHP   2. strtotime() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:84
+PHP Warning:  date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line 84
+PHP Stack trace:
+PHP   1. {main}() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:0
+PHP   2. date() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:84
+PHP Warning:  strtotime(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\r align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0105</td><td bgcolor='#eeeeec' align='right'>143584</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>0</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.2186</td><td bgcolor='#eeeeec' align='right'>147656</td><td bgcolor='#eeeeec'><a href='http://www.php.net/function.strtotime' target='_new'>strtotime</a>
+(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>84</td></tr>
+</table></font>
+<br />
+<font size='1'><table class='xdebug-error xe-warning' dir='ltr' border='1' cellspacing='0' cellpadding='1'>
+<tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> Warning: date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line <i>84</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0105</td><td bgcolor='#eeeeec' align='right'>143584</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>0</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.2195</td><td bgcolor='#eeeeec' align='right'>147688</td><td bgcolor='#eeeeec'><a href='http://www.php.net/function.date' target='_new'>date</a>
+(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>84</td></tr>
+</table></font>
+<br />
+<font size='1'><table class='xdebug-error xe-warning' dir='ltr' border='1' cellspacing='0' cellpadding='1'>
+<tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> Warning: strtotime(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line <i>84</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0105</td><td bgcolor='#eeeeec' align='right'>143584</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>0</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.2213</td><td bgcolor='#eeeeec' align='right'>147704</td><td bgcolor='#eeeeec'><a href='http://www.php.net/function.strtotime' target='_new'>strtotime</a>
+(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>84</td></tr>
+</table></font>
+					<option value="12:30"  >
+						 12:30 
+
+
+
+					</option>				
+				<br />
+<font size='1'><table class='xdebug-error xe-warning' dir='ltr' border='1' cellspacing='0' cellpadding='1'>
+<tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> Warning: date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line <i>84</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0105</td><td bgcolor='#eeeeec' align='right'>143584</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>0</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.2224</td><td bgcolor='#eeeeec' align='right'>147656</td><td bgcolor='#eeeeec'><a href='http://www.php.net/function.date' target='_new'>date</a>
+(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>84</td></tr>
+</table></font>
+<br />
+<font size='1'><table class='xdebug-error xe-warning' dir='ltr' border='1' cellspacing='0' cellpadding='1'>
+<tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> Warning: strtotime(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line <i>84</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0105</td><td bgcolor='#eeeeec' align='right'>143584</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>0</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.2232</td><td bgcolor='#eeeeec' align='right'>147672</td><td bgcolor='#eeeeec'><a href='http://www.php.net/function.strtotime' target='_new'>strtotime</a>
+(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>84</td></tr>
+</table></font>
+<br />
+<font size='1'><table class='xdebug-error xe-warning' dir='ltr' border='1' cellspacing='0' cellpadding='1'>
+<tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> Warning: strtotime(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line <i>84</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0105</td><td bgcolor='#eeeeec' align='right'>143584</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>0</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.2334</td><td bgcolor='#eeeeec' align='right'>147688</td><td bgcolor='#eeeeec'><a href='http://www.php.net/function.strtotime' target='_new'>strtotime</a>
+(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>84</td></tr>
+</table></font>
+<br />
+<font size='1'><table class='xdebug-error xe-warning' dir='ltr' border='1' cellspacing='0' cellpadding='1'>
+<tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> Warning: strtotime(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line <i>84</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0105</td><td bgcolor='#eeeeec' align='right'>143584</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>0</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.2344</td><td bgcolor='#eeeeec' align='right'>147656</td><td bgcolor='#eeeeec'><a href='http://www.php.net/function.strtotime' target='_new'>strtotime</a>
+(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>84</td></tr>
+</table></font>
+<br />
+<font size='1'><table class='xdebug-error xe-warning' dir='ltr' border='1' cellspacing='0' cellpadding='1'>
+<tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> Warning: date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line <i>84</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0105</td><td bgcolor='#eeeeec' align='right'>143584</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>0</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.2352</td><td bgcolor='#eeeeec' align='right'>147688</td><td bgcolor='#eeeeec'><a href='http://www.php.net/function.date' target='_new'>date</a>
+(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>84</td></tr>
+</table></font>
+<br />
+<font size='1'><table class='xdebug-error xe-warning' dir='ltr' border='1' cellspacing='0' cellpadding='1'>
+<tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> Warning: strtotime(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line <i>84</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0105</td><td bgcolor='#eeeeec' align='right'>143584</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>0</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.2369</td><td bgcolor='#eeeeec' align='right'>147704</td><td bgcolor='#eeeeec'><a href='http://www.php.net/function.strtotime' target='_new'>strtotime</a>
+(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>84</td></tr>
+</table></font>
+					<option value="13:20" selected >
+						 13:20 
+
+
+
+					</option>				
+									<option value="14:10"  >
+						 14:10 
+
+
+
+					</option>				
+									<option value="15:00"  >
+						 15:00 
+
+
+
+					</option>				
+									<option value="15:50"  >
+						 15:50 
+
+
+
+					</option>				
+									<option value="16:20"  >
+						 16:20 
+
+
+
+					</option>				
+									<option value="17:10"  >
+						 17:10 
+
+
+
+					</option>				
+									<option value="18:00"  >
+						 18:00 
+
+
+
+					</option>				
+									<option value="18:50"  >
+						 18:50 
+
+
+
+					</option>				
+						</select>
+            </td>
+
+        </tr> 
+
+       <td>Grupo</td>
+            
+        	<td>            
+                <input id="txt_reporte_inasistencia_grupo" name="txt_reporte_inasistencia_grupo" type="text" value="" obligatorio="true"/>
+            </td>
+        </tr> 
+	<tr>
+		<td colspan="2" align="center">
+			<input  onclick="$('#frm_reporte_inasistencias').submit()" type="button" class="boton" id="btn_reporte horas" value="Generar"/>
+
+		</td>
+	</tr>
+</table>
+</form>
+<br />
+<br />
+<form method="post" name="frm_reporte_horas" id="frm_reporte_horas" action="../registro_alumnos/pdf_registro_alumnos.php" target="_blank" >
+<table class="ui-widget ui-widget-content ui-corner-all ventana" >
+	<colgroup>
+	    <col width="50%" />
+	    <col width="50%" /> 
+	</colgroup>
+        <tr>    
+            <td class="ui-widget-header ui-corner-all encabezado" colspan="2">
+               Reporte de Horas
+            </td>    
+        </tr>        
+        
+	<tr>
+		<td>
+			Fecha:
+		</td>
+		<td>
+ 			<input id="txt_reporte_alumnos_fecha" name="txt_reporte_alumnos_fecha" type="text" class="fecha" obligatorio="true" value="<br />
+<font size='1'><table class='xdebug-error xe-warning' dir='ltr' border='1' cellspacing='0' cellpadding='1'>
+<tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> Warning: date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line <i>140</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0105</td><td bgcolor='#eeeeec' align='right'>143584</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>0</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.2384</td><td bgcolor='#eeeeec' align='right'>147656</td><td bgcolor='#eeeeec'><a href='http://www.php.net/function.date' target='_new'>date</a>
+(  )</td><td title='C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php' bgcolor='#eeeeec'>..\frm_registro_alumnos.php<b>:</b>140</td></tr>
+</table></font>
+2015-02-09"/>
+		</td>
+	</tr>
+
+	<tr>
+		<td colspan="2" align="center">
+			<input  onclick="$('#frm_reporte_horas').submit()" type="button" class="boton" id="btn_reporte horas" value="Generar"/>
+
+		</td>
+	</tr>
+</table>
+</form>
+
+<br />
+<br />
+
+<form method="post" name="frm_reporte_maestros" id="frm_reporte_maestros" action="../registro_alumnos/pdf_registro_maestros.php" target="_blank" >
+<table class="ui-widget ui-widget-content ui-corner-all ventana" >
+	<colgroup>
+	    <col width="50%" />
+	    <col width="50%" /> 
+	</colgroup>
+        <tr>    
+            <td class="ui-widget-header ui-corner-all encabezado" colspan="2">
+               Reporte de registro de maestros
+            </td>    
+        </tr>        
+        
+	<tr>
+		<td>
+			Año
+		</td>
+		<td>
+ 			<select id="sel_reporte_maestros_ano" name="sel_reporte_maestros_ano">
+							<option value="2013">
+					2013				</option>
+							<option value="2014">
+					2014				</option>
+							<option value="2015">
+					2015				</option>
+							<option value="2016">
+					2016				</option>
+							<option value="2017">
+					2017				</option>
+							<option value="2018">
+					2018				</option>
+							<option value="2019">
+					2019				</option>
+							<option value="2020">
+					2020				</option>
+							<option value="2021">
+					2021				</option>
+							<option value="2022">
+					2022				</option>
+							<option value="2023">
+					2023				</option>
+							<option value="2024">
+					2024				</option>
+							<option value="2025">
+					2025				</option>
+							<option value="2026">
+					2026				</option>
+							<option value="2027">
+					2027				</option>
+							<option value="2028">
+					2028				</option>
+							<option value="2029">
+					2029				</option>
+							<option value="2030">
+					2030				</option>
+							<option value="2031">
+					2031				</option>
+							<option value="2032">
+					2032				</option>
+							<option value="2033">
+					2033				</option>
+							<option value="2034">
+					2034				</option>
+							<option value="2035">
+					2035				</option>
+							<option value="2036">
+					2036				</option>
+							<option value="2037">
+					2037				</option>
+							<option value="2038">
+					2038				</option>
+							<option value="2039">
+					2039				</option>
+							<option value="2040">
+					2040				</option>
+							<option value="2041">
+					2041				</option>
+							<option value="2042">
+					2042				</option>
+							<option value="2043">
+					2043				</option>
+							<option value="2044">
+					2044				</option>
+							<option value="2045">
+					2045				</option>
+							<option value="2046">
+					2046				</option>
+							<option value="2047">
+					2047				</option>
+							<option value="2048">
+					2048				</option>
+							<option value="2049">
+					2049				</option>
+							<option value="2050">
+					2050				</option>
+						</select>
+		</td>
+	</tr>
+
+	<tr>
+		<td>
+			Mes
+		</td>
+		<td>
+ 			<select id="sel_reporte_maestros_mes" name="sel_reporte_maestros_mes">
+							<option value="1">Enero</<option>
+							<option value="2">Febrero</<option>
+							<option value="3">Marzo</<option>
+							<option value="4">Abril</<option>
+							<option value="5">Mayo</<option>
+							<option value="6">Junio</<option>
+							<option value="7">Julio</<option>
+							<option value="8">Agosto</<option>
+							<option value="9">Septiembre</<option>
+							<option value="10">Ocutubre</<option>
+							<option value="11">Noviembre</<option>
+							<option value="12">Diciembre</<option>
+						</select>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2" align="center">
+			<input onclick="$('#frm_reporte_maestros').submit()" type="button" class="boton" id="btn_reporte horas" value="Generar"/>
+
+		</td>
+	</tr>
+</table>
+</form>
+
+
+<br />
+<br />
+
+<form method="post" name="frm_alumno_aseo" id="frm_alumno_aseo" action="../registro_alumnos/acc_registro_alumnos.php" >
+<table class="ui-widget ui-widget-content ui-corner-all ventana" >
+	<colgroup>
+	    <col width="50%" />
+	    <col width="50%" /> 
+	</colgroup>
+        <tr>    
+            <td class="ui-widget-header ui-corner-all encabezado" colspan="2">
+               Aseo Aulas
+            </td>    
+        </tr>        
+    	<tr>
+		<td>
+			Grupo
+		</td>
+		<td>	
+			<input type="text" name="txt_aseo_grupo" id="txt_aseo_grupo"/>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2" align="center">
+			<input  onclick="generar_aseadores();" type="button" value="Generar" class="boton"/>
+
+		</td>
+	</tr>
+
+	<tr>
+		<td colspan="2" >
+			<div id="div_alumnos_aseo" >
+				No se han generado alumnos
+			</div>
+			
+			
+		</td>
+		
+	</tr>
+	<tr>
+		<td colspan="2" align="center" >
+			<input  onclick="guardar_alumno_aseo()" type="button" value="Guardar" class="boton"/>
+			
+		</td>
+		
+	</tr>	
+	
+
+</table>
+</form>
+
+
+
+egistro\registro_alumnos\frm_registro_alumnos.php on line 84
+PHP Stack trace:
+PHP   1. {main}() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:0
+PHP   2. strtotime() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:84
+PHP Warning:  strtotime(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line 84
+PHP Stack trace:
+PHP   1. {main}() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:0
+PHP   2. strtotime() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:84
+PHP Warning:  strtotime(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line 84
+PHP Stack trace:
+PHP   1. {main}() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:0
+PHP   2. strtotime() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:84
+PHP Warning:  date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line 84
+PHP Stack trace:
+PHP   1. {main}() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:0
+PHP   2. date() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:84
+PHP Warning:  strtotime(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line 84
+PHP Stack trace:
+PHP   1. {main}() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:0
+PHP   2. strtotime() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:84
+PHP Warning:  date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php on line 140
+PHP Stack trace:
+PHP   1. {main}() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:0
+PHP   2. date() C:\wamp\www\cecyteg\modules\registro\registro_alumnos\frm_registro_alumnos.php:140

@@ -1,0 +1,6 @@
+SELECT * FROM `vw_inventario`
+LEFT JOIN
+tbl_ubicacion
+ON 
+vw_inventario.tbl_ubicacion_id_ubicacion = tbl_ubicacion.id_ubicacion
+ where tbl_ubicacion.codigo ='A1'

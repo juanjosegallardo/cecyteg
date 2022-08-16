@@ -1,0 +1,3 @@
+SELECT SEC_TO_TIME(SUM(TIMESTAMPDIFF(SECOND, hora_entrada, hora_salida))) HorasTrabajadas FROM `tbl_registro_servicio` WHERE tbl_alumno_id_alumno= 1
+
+SELECT SEC_TO_TIME(SUM(TIMESTAMPDIFF(SECOND, hora_entrada, hora_salida))) HorasTrabajadas FROM `tbl_registro_servicio` WHERE tbl_alumno_id_alumno= (SELECT id_alumno FROM `tbl_alumno` WHERE no_control= '')

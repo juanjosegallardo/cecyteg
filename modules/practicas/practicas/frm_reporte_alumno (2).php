@@ -1,0 +1,67 @@
+<?php
+    include_once("../../../config.php");      
+    include("../../../lib/generales/cls_conexion.php");
+    include("../../../lib/generales/cls_general.php");
+    include("../../../lib/generales/cls_formulario.php");
+	include("../../../classes/cls_mensaje.php");
+    include("../../../classes/cls_alumno.php");   
+	include("../../../classes/cls_reporte.php");  
+    include("../../../lib/ui/cls_boton.php");
+    include("dic_alumno.php");		
+    
+    $btn_guardar_alumno=new Boton("btn_guardar_alumno","Guardar","guardar_foto_alumno()","75px",true);
+           
+    $obj_alumno = new Alumno();
+    $obj_alumno->id_alumno = $_GET["id_alumno"];
+    $obj_alumno->cargarPorId();
+        
+    $arr_parametros = array("id_alumno" =>  $_GET["id_alumno"] );
+    $ruta_foto = (file_exists("../../../web/uploads/alumnos/{$obj_alumno->id_alumno}.jpg"))?"../../../web/uploads/alumnos/{$obj_alumno->id_alumno}.jpg?x=".rand(1,1000000) :"../../../web/images/generales/usuario.jpg";	        
+    
+	$obj_reporte =  new Reporte();
+	$obj_reporte->tbl_alumno_id_alumno = $obj_alumno->id_alumno;
+	$obj_reporte->cargar_reportes();
+?>
+
+
+
+<form id="frm_reporte_alumno" name="frm_reporte_alumno" action="acc_alumno.php" method="post"  enctype="multipart/form-data">
+	<?php echo $obj_alumno->nombre; ?>
+	<br />
+<br />
+
+	<img src="<?php echo $ruta_foto; ?>" width="100" height="120" />
+    <input type="hidden" name="hdn_foto_alumno_id_alumno" id="hdn_foto_alumno_id_alumno" value="<?php echo $obj_alumno->id_alumno; ?>" />
+    <br />
+<br />
+
+Causa: <input type="text" name="txt_causa" id="txt_causa" />	
+<br />
+<br />
+
+<input type="button" value="Guardar"  class="boton" onclick="guardar_reporte()" /> 
+</form>
+<hr />
+<table width="500px" border="0">
+	<tr>
+		<th width="80px">
+			Fecha
+		</th>
+		<th>
+			Causa
+		</th>
+	</tr>
+	<?php if(count($obj_reporte->_datos > 0 )) :foreach($obj_reporte->_datos as $dato):  ?>
+	<tr>
+		<td width="80px">
+			<a href="../../administracion/alumnos/pdf_reporte.php/pdf_reporte.php?id_reporte=<?php echo $dato["id_reporte"] ?>" target="_blank" ><?php echo $dato["fecha"]; ?></a>
+		</td>
+		<td align="center">
+			<a href="../../administracion/alumnos/pdf_reporte.php/pdf_reporte.php?id_reporte=<?php echo $dato["id_reporte"] ?>" target="_blank" ><?php echo $dato["causa"]; ?></a>
+		</td>
+		
+	</tr>
+	<?php endforeach; endif; ?>
+</table>
+<br />
+<br />

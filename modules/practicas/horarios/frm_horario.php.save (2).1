@@ -1,0 +1,251 @@
+<?php
+include_once("../../../config.php");  
+include("../../../lib/generales/cls_conexion.php");
+include("../../../lib/generales/cls_general.php");
+
+include("../../../lib/ui/cls_grid.php");
+include("../../../lib/ui/cls_tab.php");
+include("../../../classes/cls_dia.php");
+include("../../../classes/cls_hora.php");
+include("../../../classes/cls_aula.php"); 
+include("../../../classes/cls_grupo.php");
+include("../../../lib/generales/cls_session.php");
+include("../../../lib/generales/cls_formulario.php");
+
+include("dic_horario.php");		
+
+$obj_formulario = new Formulario();
+$obj_formulario->pantalla = $pantalla_horario; 
+
+$obj_aula= new Aula();
+$obj_aula->cargar();
+
+$obj_dias= new Dia();
+$obj_dias->cargar();
+
+
+$obj_hora= new Hora();
+$obj_hora->cargar();
+
+$obj_grupo= new Grupo();
+$obj_hora->cargar();
+
+?>
+
+
+
+
+<select id="sel_horarios_aula" >
+
+	<option value="">Seleccione una opci&oacute;n</option>
+	<?php foreach($obj_aula->_datos as $renglon_aula ): ?>
+		<option value="<?php echo $renglon_aula["id_aula"]; ?>"><?php echo $renglon_aula["nombre"]; ?></option>
+	<?php endforeach; ?>
+</select>
+<input id="hdn_horario_semana" value="0" type="hidden" />
+
+<table>
+	<tr>
+	
+	
+		<td colspan="2" align="center">
+
+			<div id="div_cronograma">
+					<table style="border-style:solid; border-width:thin" cellpadding="0" cellspacing="0">
+						<tr>
+							<th class="celda_horario">&nbsp;
+								
+							</th>
+						
+							<?php  $i=1; foreach($obj_dias->_datos as $renglon ): ?>
+							
+								<th  class="celda_horario"  style="border-style:solid; border-width:thin">
+									<?php echo $renglon["nombre"];  ?> <br />
+									<div id="dia_semana_<?php echo $i++; ?>"></div>  
+								</th>
+							<?php endforeach;?>							
+						<tr>
+						<?php $no_renglon=1; foreach($obj_hora->_datos as $renglon_horas ): ?>
+							
+						<tr>
+								<td  class="celda_horario" style="border-style:solid; border-width:thin">
+									<?php echo $renglon_horas["hora"];  ?>
+								</td>
+								
+								<?php $i=1; foreach($obj_dias->_datos as $renglon ): ?>
+								
+									<td renglon="<?php echo $no_renglon; ?>" hora="<?php echo $renglon_horas["hora"]; ?>" class="hora_practica celda_horario fecha_oculta_<?php echo $i++; ?>" style="border-style:solid; border-width:thin">
+									
+									</td>
+								<?php endforeach;?>		
+						</tr>
+						<?php $no_renglon++; endforeach;?>	
+						
+						
+					</table>
+					
+			</div>
+			
+		</td>
+	</tr>
+    <tr>
+        <td colspan="2">
+        <br />
+        </td>
+    </tr>
+	<tr>
+			<div class="boton"  onclick="semana_anterior()">Anterior </div>
+		</td>
+		<td  align="center">
+		
+					<div class="boton"  onclick="semana_siguiente()">Siguiente</div>
+		</td>
+	</tr>
+</table>
+
+<div id="div_horario_agregar_practica" style="display:none; width:200px">
+<input type="hidden" value="0" id="hdn_semana"  /> 
+
+
+<form name="frm_agregar_clase" id="frm_agregar_clase">
+
+   <table >
+        <colgroup>
+            <col width="50%" />
+            <col width="50%" /> 
+        </colgroup>
+
+		<tr>
+		<td align="right">
+			Grupo
+		</td>
+		<td>
+			<?php  echo $obj_formulario->generar_componente("cmb_grupo"); ?>
+		</td>
+
+	</tr>
+	<tr>
+		<td align="right">
+			Materia
+		</td>
+		<td>
+			<?php  echo $obj_formulario->generar_componente("cmb_materia"); ?>
+		</td>
+	</tr
+	
+	><tr>
+		<td align="right">
+			Practica
+		</td>
+		<td>
+			<?php  echo $obj_formulario->generar_componente("cmb_practica"); ?>
+		</td>
+	</tr>
+	
+		<tr>
+		<td align="right">
+			Profesor
+		</td>
+		<td>
+			<?php  echo $obj_formulario->generar_componente("cmb_profesor"); ?>
+		</td>
+	</tr>
+	
+	
+		
+	<tr>
+		<td align="right">
+			Fecha Hora
+		</td>
+		<td>
+			<?php  echo $obj_formulario->generar_componente("horario_fecha_hora"); ?>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right">
+			Aula
+		</td>
+		<td>
+			<input type="text" value="" readonly="" id="horario_aula" name="horario_aula" />
+			<?php  echo $obj_formulario->generar_componente("hdn_horario_id_aula"); ?>
+		</td>
+		
+
+	</tr>
+	
+	<tr>
+		<td align="right">
+			Modulos
+		</td>
+		<td>
+			<?php  echo $obj_formulario->generar_componente("cmb_modulos"); ?>
+		</td>
+		
+
+	</tr>
+	
+	
+	
+	<tr>
+		<td>
+		</td>
+	</tr>
+	
+	<tr>	
+		<td colspan="2" align="center">
+			<input type="button" class="boton" id="btn_horario_guardar" value="Guardar" onclick="guardar_clase()" />
+		</td>
+	</tr>
+		
+	<tr>
+		<td id="msg_horario_clase">
+		
+		</td>
+	</tr>
+	
+</table>
+	
+</form>
+
+</div>
+
+
+
+<div id="div_horario_borrar_practica"  style="display:none; width:200px">
+
+<form id="frm_borrar_clase" name="frm_borrar_clase">
+    <input type="hidden" name="hdn_id_horario_clase" id="hdn_id_horario_clase" />
+   <table >
+        <colgroup>
+            <col width="50%" />
+            <col width="50%" /> 
+        </colgroup>
+		
+
+	<tr>    
+		<td align="center" colspan="2" id="td_descripcion_clase">
+		</td>    
+    </tr>  
+	<tr>    
+		<td align="center" colspan="2" id="msg_borrar_clase">
+		</td>    
+    </tr>  
+  <!--	<tr>    
+		<td colspan="2" align="center">
+            <a id="link_practica_clase"  class="boton" >Practica</a>
+		</td>    
+    </tr>  	-->
+	<tr>    
+		<td colspan="2" align="center">
+            <input type="button" class="boton" value="Borrar" onclick="borrar_clase()" />
+		</td>    
+    </tr>  	
+</table>
+</form>
+	
+
+
+
+
+</div>

@@ -1,0 +1,37 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TinyServerHost", "WebServer\WebServer.csproj", "{469FEC00-D180-4540-9316-26A9FD66928D}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TinyServer", "TinyServer\TinyServer.csproj", "{46307657-B30D-4E9E-AD5B-02264E4F5C86}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RssAggregator", "RssAggregator\RssAggregator.csproj", "{7D3C1377-170E-40D2-85B3-3ABFF2134A5F}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{469FEC00-D180-4540-9316-26A9FD66928D}.Debug.ActiveCfg = Debug|.NET
+		{469FEC00-D180-4540-9316-26A9FD66928D}.Debug.Build.0 = Debug|.NET
+		{469FEC00-D180-4540-9316-26A9FD66928D}.Release.ActiveCfg = Release|.NET
+		{469FEC00-D180-4540-9316-26A9FD66928D}.Release.Build.0 = Release|.NET
+		{46307657-B30D-4E9E-AD5B-02264E4F5C86}.Debug.ActiveCfg = Debug|.NET
+		{46307657-B30D-4E9E-AD5B-02264E4F5C86}.Debug.Build.0 = Debug|.NET
+		{46307657-B30D-4E9E-AD5B-02264E4F5C86}.Release.ActiveCfg = Release|.NET
+		{46307657-B30D-4E9E-AD5B-02264E4F5C86}.Release.Build.0 = Release|.NET
+		{7D3C1377-170E-40D2-85B3-3ABFF2134A5F}.Debug.ActiveCfg = Debug|.NET
+		{7D3C1377-170E-40D2-85B3-3ABFF2134A5F}.Debug.Build.0 = Debug|.NET
+		{7D3C1377-170E-40D2-85B3-3ABFF2134A5F}.Release.ActiveCfg = Release|.NET
+		{7D3C1377-170E-40D2-85B3-3ABFF2134A5F}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

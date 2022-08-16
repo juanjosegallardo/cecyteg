@@ -1,0 +1,4 @@
+SELECT  `numero_inventario`,`tipo_equipo`,`especificaciones`,`marca`,`modelo`,`no_serie`,CASE estado WHEN 1 then 'bueno' when  2 then  'regular' when 3 then 'malo' end as estado,'CENTRO COMPUTO', 'JUAN JOSE GALLARDO MENDOZA','0','' FROM `vw_inventario` WHERE 1
+
+
+SELECT  `tipo_equipo`,`marca`,`modelo`,`no_serie`,CASE estado WHEN 1 then 'bueno' when  2 then  'regular' when 3 then 'malo' end as estado,'CENTRO COMPUTO','', 'JUAN JOSE GALLARDO MENDOZA','PROGRAMADOR','' FROM `vw_inventario` WHERE `numero_inventario` =0

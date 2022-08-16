@@ -1,0 +1,63 @@
+<?php
+   
+    $pantalla_usuario["hdn_id_usuario_usuario"]["etiqueta"] = "input";
+    $pantalla_usuario["hdn_id_usuario_usuario"]["campo"] = "id_usuario";
+    $pantalla_usuario["hdn_id_usuario_usuario"]["type"] = "hidden";        
+   
+    $pantalla_usuario["txt_nombre_usuario_usuario"]["etiqueta"] = "input";
+    $pantalla_usuario["txt_nombre_usuario_usuario"]["campo"] = "nombre_usuario";
+    $pantalla_usuario["txt_nombre_usuario_usuario"]["texto"] = "Nombre usuario";
+    $pantalla_usuario["txt_nombre_usuario_usuario"]["type"] = "text";            
+    $pantalla_usuario["txt_nombre_usuario_usuario"]["obligatorio"] = "true";       
+    $pantalla_usuario["txt_nombre_usuario_usuario"]["mensaje"] = "Favor de especificar un nombre de usuario valido";
+    $pantalla_usuario["txt_nombre_usuario_usuario"]["exp"] = EXP_ALFANUMERICO;
+    $pantalla_usuario["txt_nombre_usuario_usuario"]["caracteres"] = CAR_ALFANUMERICO;
+    $pantalla_usuario["txt_nombre_usuario_usuario"]["maxlength"] = "100";
+    
+    $pantalla_usuario["txt_apellido_paterno_usuario"]["etiqueta"] = "input";
+    $pantalla_usuario["txt_apellido_paterno_usuario"]["campo"] = "apellido_paterno";
+    $pantalla_usuario["txt_apellido_paterno_usuario"]["texto"] = "Apellido paterno";
+    $pantalla_usuario["txt_apellido_paterno_usuario"]["type"] = "text";            
+    $pantalla_usuario["txt_apellido_paterno_usuario"]["obligatorio"] = "false";       
+    $pantalla_usuario["txt_apellido_paterno_usuario"]["mensaje"] = "Favor de especificar un apellido paterno valido";
+    $pantalla_usuario["txt_apellido_paterno_usuario"]["exp"] = EXP_LETRA_ESPACIO;
+    $pantalla_usuario["txt_apellido_paterno_usuario"]["caracteres"] = CAR_LETRA_ESPACIO;
+    $pantalla_usuario["txt_apellido_paterno_usuario"]["maxlength"] = "100";
+    
+    $pantalla_usuario["txt_apellido_materno_usuario"]["etiqueta"] = "input";
+    $pantalla_usuario["txt_apellido_materno_usuario"]["campo"] = "apellido_materno";
+    $pantalla_usuario["txt_apellido_materno_usuario"]["texto"] = "Apellido materno";
+    $pantalla_usuario["txt_apellido_materno_usuario"]["type"] = "text";            
+    $pantalla_usuario["txt_apellido_materno_usuario"]["obligatorio"] = "false";       
+    $pantalla_usuario["txt_apellido_materno_usuario"]["mensaje"] = "Favor de especificar un apellido paterno valido";   
+    $pantalla_usuario["txt_apellido_materno_usuario"]["exp"] = EXP_LETRA_ESPACIO;
+    $pantalla_usuario["txt_apellido_materno_usuario"]["caracteres"] = CAR_LETRA_ESPACIO;
+    $pantalla_usuario["txt_apellido_materno_usuario"]["maxlength"] = "100"; 
+    
+    $pantalla_usuario["txt_nombre_usuario"]["etiqueta"] = "input";
+    $pantalla_usuario["txt_nombre_usuario"]["campo"] = "nombre";
+    $pantalla_usuario["txt_nombre_usuario"]["texto"] = "Nombre";
+    $pantalla_usuario["txt_nombre_usuario"]["type"] = "text";            
+    $pantalla_usuario["txt_nombre_usuario"]["obligatorio"] = "true";       
+    $pantalla_usuario["txt_nombre_usuario"]["mensaje"] = "Favor de especificar un nombre valido";
+    $pantalla_usuario["txt_nombre_usuario"]["exp"] = EXP_LETRA_ESPACIO;
+    $pantalla_usuario["txt_nombre_usuario"]["caracteres"] = CAR_LETRA_ESPACIO;
+    $pantalla_usuario["txt_nombre_usuario"]["maxlength"] = "100";    
+
+    $pantalla_usuario["txt_correo_electronico_usuario"]["etiqueta"] = "input";
+    $pantalla_usuario["txt_correo_electronico_usuario"]["campo"] = "correo_electronico";
+    $pantalla_usuario["txt_correo_electronico_usuario"]["texto"] = "Correo electronico";
+    $pantalla_usuario["txt_correo_electronico_usuario"]["type"] = "text";            
+    $pantalla_usuario["txt_correo_electronico_usuario"]["obligatorio"] = "false";       
+    $pantalla_usuario["txt_correo_electronico_usuario"]["mensaje"] = "Favor de especificar un corro electronico valido";
+    $pantalla_usuario["txt_correo_electronico_usuario"]["exp"] = EXP_CORREO;
+    $pantalla_usuario["txt_correo_electronico_usuario"]["caracteres"] = CAR_CORREO;
+    $pantalla_usuario["txt_correo_electronico_usuario"]["maxlength"] = "100";     
+    
+    $pantalla_usuario["chk_permisos_usuario"]["etiqueta"] = "div";    
+    $pantalla_usuario["chk_permisos_usuario"]["class"] = "checkbox";
+    $pantalla_usuario["chk_permisos_usuario"]["texto"] = "Permiso";                              
+    $pantalla_usuario["chk_permisos_usuario"]["ruta"] = "../usuarios/prp_usuario.php"; 
+    
+                  
+?>

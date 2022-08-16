@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<ProjectSupport>
+  <SupportedProjects>
+    <ProjectName>TinyServer</ProjectName>
+    <ProjectName>RssAggregator</ProjectName>
+    <ProjectName>WebServer</ProjectName>
+  </SupportedProjects>
+</ProjectSupport>

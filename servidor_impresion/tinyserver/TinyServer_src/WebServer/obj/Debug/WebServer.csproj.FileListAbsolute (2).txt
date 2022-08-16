@@ -1,0 +1,11 @@
+C:\Users\FIRALAP3\Desktop\TinyServer_src\WebServer\bin\Debug\TinyServerHost.exe.config
+C:\Users\FIRALAP3\Desktop\TinyServer_src\WebServer\bin\Debug\TinyServerHost.exe
+C:\Users\FIRALAP3\Desktop\TinyServer_src\WebServer\bin\Debug\TinyServerHost.pdb
+C:\Users\FIRALAP3\Desktop\TinyServer_src\WebServer\bin\Debug\TinyServerLib.dll
+C:\Users\FIRALAP3\Desktop\TinyServer_src\WebServer\bin\Debug\TinyServerLib.pdb
+C:\Users\FIRALAP3\Desktop\TinyServer_src\WebServer\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\FIRALAP3\Desktop\TinyServer_src\WebServer\obj\Debug\TinyServerHost.exe
+C:\Users\FIRALAP3\Desktop\TinyServer_src\WebServer\obj\Debug\TinyServerHost.pdb
+D:\wamp\www\casac7\servidor_impresion\tinyserver\TinyServer_src\WebServer\bin\Debug\TinyServerHost.exe.config
+D:\wamp\www\casac7\servidor_impresion\tinyserver\TinyServer_src\WebServer\obj\Debug\TinyServerHost.exe
+D:\wamp\www\casac7\servidor_impresion\tinyserver\TinyServer_src\WebServer\obj\Debug\TinyServerHost.pdb

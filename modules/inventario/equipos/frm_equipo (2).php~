@@ -1,0 +1,37 @@
+<?php
+include_once("../../../config.php");  
+include("../../../lib/generales/cls_conexion.php");
+include("../../../lib/generales/cls_general.php");
+include("../../../classes/cls_mensaje.php");
+include("../../../lib/ui/cls_grid.php");
+include("../../../lib/ui/cls_tab.php");
+include("../../../lib/generales/cls_session.php");
+
+?>
+<table>
+    <tr>    
+        <td align="center">
+            <br />
+			<form action="" method="post" >
+				<div class="grid_server" id="grd_equipo" ruta="../equipos/prp_equipo.php"></div><br />
+            </form>
+        </td>
+        
+    </tr>
+    <tr>
+    	<td align="right">
+	       	<input type="button" class="boton" value="Nuevo" onclick="mostrar_sincrono('../equipos/frm_nuevo_equipo.php','div_equipo');iniciar_formulario('frm_nuevo_equipo');" id="btn_nuevo_equipo" />
+            <input type="button" id="btn_modificar_equipo" value="Modificar" class="boton" onclick="cargar_registro('../equipos/frm_modificar_equipo.php', 'id_equipo', 'rad_equipo','div_equipo','frm_modificar_equipo');" />
+            <input type="button" id="btn_abrir_equipo" value="Abrir" class="boton" onclick="cargar_registro('../equipos/frm_abrir_equipo.php', 'id_equipo', 'rad_equipo','div_equipo','frm_modificar_equipo');" />
+            <input type="button" id="btn_foto_equipo" value="Foto" class="boton" onclick="cargar_registro('../equipos/frm_foto_equipo.php', 'id_equipo', 'rad_equipo','div_equipo','frm_foto_equipo');" />            
+            <input type="button" id="btn_expediente_equipo" value="Expediente" class="boton" onclick="cargar_registro('../equipos/frm_expediente_equipo.php', 'id_equipo', 'rad_equipo','div_equipo','frm_expediente_equipo');" />
+	<form	id="frm_actualizar_squid" name="frm_actualizar_squid" action="../equipos/acc_equipo.php" method="post">
+            <input type="button" id="btn_actualizar_squid" value="Squid" class="boton" onclick="guardar_actualizacion_squid()" />       
+	</form>      
+      
+            
+	   </td>
+    </tr>
+</table>
+<br />
+<div id="div_equipo" align="center"></div>

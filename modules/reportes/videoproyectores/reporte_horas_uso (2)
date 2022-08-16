@@ -1,0 +1,41 @@
+<?php
+
+   include_once("../../../config.php");  
+	    include("../../../lib/generales/cls_conexion.php");
+	//$obj_conexion->ejecutarQuery("SELECT * FROM `vw_prestamo` WHERE tipo_equipo='CANON' and month(fecha) ='{$_GET["txt_mes"]}' and year(fecha)='{$_GET["txt_ano"]}'");
+$obj_conexion->ejecutarQuery("SELECT * FROM `vw_prestamo`");	
+$i=0;
+?>
+<table>
+
+<?php foreach($obj_conexion->_datos as $dato): ?>
+<tr>
+	<td>
+		<?php echo $dato["fecha"]; ?>
+	<td>
+</tr>
+<tr>
+	<td>
+		<?php echo $dato["tipo_equipo"]; ?>
+	<td>
+</tr>
+
+<tr>
+	<td>
+		<?php echo $dato["duracion"]; ?>
+	<td>
+</tr>
+
+<tr>
+	<td>
+		<?php echo $dato["nombre"]; ?>
+	<td>
+</tr>
+
+<tr>
+	<td>
+		<?php echo $dato["numero_inventario"]; ?>
+	<td>
+</tr>
+<?php enforeach;?>
+</table>

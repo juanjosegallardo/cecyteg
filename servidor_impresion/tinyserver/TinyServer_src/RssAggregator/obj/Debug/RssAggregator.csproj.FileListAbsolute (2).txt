@@ -1,0 +1,8 @@
+C:\Users\FIRALAP3\Desktop\TinyServer_src\RssAggregator\bin\Debug\RssAggregator.exe.config
+C:\Users\FIRALAP3\Desktop\TinyServer_src\RssAggregator\bin\Debug\RssAggregator.exe
+C:\Users\FIRALAP3\Desktop\TinyServer_src\RssAggregator\bin\Debug\RssAggregator.pdb
+C:\Users\FIRALAP3\Desktop\TinyServer_src\RssAggregator\bin\Debug\TinyServerLib.dll
+C:\Users\FIRALAP3\Desktop\TinyServer_src\RssAggregator\bin\Debug\TinyServerLib.pdb
+C:\Users\FIRALAP3\Desktop\TinyServer_src\RssAggregator\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\FIRALAP3\Desktop\TinyServer_src\RssAggregator\obj\Debug\RssAggregator.exe
+C:\Users\FIRALAP3\Desktop\TinyServer_src\RssAggregator\obj\Debug\RssAggregator.pdb
